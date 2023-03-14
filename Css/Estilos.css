@@ -11,20 +11,28 @@
 }
 
 .header{
-    background-color: rgba(151, 147, 147, 0.342);
+    background-color: rgba(247, 203, 203, 0.425);
     padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 25px;
-text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+text-align: left;
 }
 
 .conteinerlogo{
+    display: flex;
+    justify-content: center;
     
-
     
 }
+    .color{
+        color: rgb(255, 255, 255);
+        background-color: rgba(122, 115, 117, 0.897);
+        
+    }
     
-
+    .colorlink{
+        color: rgba(122, 115, 117, 0.897);
+    }
 .navegacion{
     color: aliceblue;    
     font-size: 1.3rem;
@@ -47,6 +55,7 @@ text-align: center;
 
 
 }
+
 
 /*termina la maquetación del header*/
 /*comienza la maquetación del main*/
