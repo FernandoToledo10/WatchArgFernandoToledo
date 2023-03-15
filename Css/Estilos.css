@@ -130,3 +130,28 @@ object-fit: cover;
 }
 /*termina la maquetación del footer*/
 /*probando en preentrega
+
+/*Maquetado de la página Galeria*/
+.carousel-item{
+    height: 75vh;}
+
+    /*Maquetado de la página nosotros*/
+
+.imgfondocol{
+    background-position: center;
+    background-size: cover;
+    
+}
+.alto{
+    height: 71vh;
+}
+.textColorh1{
+    color: rgb(69, 73, 73);
+}
+
+.colizquierda{
+    height: 100%;
+}
+.colderecha{
+    height: 100%;
+}
