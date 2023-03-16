@@ -155,3 +155,16 @@ object-fit: cover;
 .colderecha{
     height: 100%;
 }
+
+    /*Maquetado de la página contacto*/
+
+.imgcon{
+
+    height: 50%;
+}
+
+/*maquetado pagina PF*/
+.centrado{
+    display: flex;
+    justify-content: center;
+}
