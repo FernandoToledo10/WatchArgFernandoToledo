@@ -162,7 +162,9 @@ object-fit: cover;
 
     height: 50%;
 }
-
+.btn:hover{
+    background-color: rgb(255, 127, 238) !important;
+}
 /*maquetado pagina PF*/
 .centrado{
     display: flex;
