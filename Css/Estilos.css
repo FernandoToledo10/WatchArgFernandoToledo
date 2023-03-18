@@ -101,18 +101,21 @@ object-fit: cover;
 }
 .tittlecard{
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    margin-top: 5px;
     color: rgb(69, 73, 73)
 }
-.contenedorvideo{
+.video-container{
     text-align: center;
-    margin-bottom: 20px;
-    padding: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
 
 }
 .Tituloparavideo{
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     color: rgb(69, 73, 73)
     font-size: 1.5rem;
 }
@@ -134,6 +137,9 @@ object-fit: cover;
 /*Maquetado de la página Galeria*/
 .carousel-item{
     height: 75vh;}
+    
+        
+    
 
     /*Maquetado de la página nosotros*/
 
@@ -143,7 +149,7 @@ object-fit: cover;
     
 }
 .alto{
-    height: 71vh;
+    min-height: 71vh;
 }
 .textColorh1{
     color: rgb(69, 73, 73);
@@ -159,8 +165,8 @@ object-fit: cover;
     /*Maquetado de la página contacto*/
 
 .imgcon{
-
-    height: 50%;
+width: 50%;
+    
 }
 .btn:hover{
     background-color: rgb(255, 127, 238) !important;
@@ -168,33 +174,82 @@ object-fit: cover;
 /*maquetado pagina PF*/
 .centrado{
     display: flex;
-    justify-content: center;
-}
+    justify-content: center;}
+    
+    .alto{
+
+        overflow: hidden;
+
+
+    }
+
+    .card-text{
+        width: 100%;
+        height: 100%;
+    }
+    .Tituloparamapa
+{
+    margin-top: 10px;
+    margin-bottom: 10px;}
+    .parrafomapa{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    
+
+
 /*media queris*/
-@media screen and (max-width: 768px)
+@media screen and (max-width: 768px){
+    .contenedorcards{
+        height: 85%;
+        margin: 0 auto;
+    }
+    
+    .card{
+        width: 100%;
+        height: 300px;
+        background-color: blanchedalmond;
+        margin: 10px;
+        display: inline-block;
+    }
+    .tittlecard{
+        text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    color: rgb(69, 73, 73)
+    }
+    
+    .card img{
+        width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;}
+    
+    .imagNos{
+        width: 100%;
+       }
+    .ImagCon{
+        width: 100%;
+    height: 80%
+    }
 
-.contenedorcards{
-    height: 85%;
-    margin: 0 auto;}
-
-.card{
-    width: 100%;
-    height: 300px;
-    background-color: blanchedalmond;
-    margin: 10px;
-    display inline-block;:
+.carousel-item{
+    height: 100%}
+    
+   .Parrafovideo{
+    font-size: 1rem;
+   }
+   .parrafomapa{
+   font-size: 1rem;}
+   
+    .mapita{
+        width: 450px;
+        height: 350;
+    }
 }
 
-.card img{
-    width: 100%;
-height: 80%;
-border-radius: 10px 10px 0 0;
-object-fit: cover;}
+    
 
-.imagNos{
-    width: 100%;
-    height: 80%;}
-.ImagCon{
-    width: 100%;
-height: 80%
-}
+
