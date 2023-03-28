@@ -5,48 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchArg</title>
-    <!--aqui va el favicom-->
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <!--aqui va el estilo-->
-    <link rel="stylesheet" href="../Css/Estilos.css">
-    <!-- aqui van los iconos -->
-    <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
-
+   <!--aqui va el favicom-->
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+   <!--aqui va boostrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!--aqui va el estilo-->
+   <link rel="stylesheet" href="../Css/Estilos.css">
+   <!-- aqui van los iconos -->
+<script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--esto es-->
+    <!--aqui va el header-->
 <header class="header">
-    <DIV class="conteiner logo">
-        <img src="../Assets/Img/logo.png" width="100px" alt="logo">
+    <DIV class="conteinerlogo">
+    <img class="logo" src="../Assets/Img/logo_horizontal.png" width="250 px" alt="logo de watcharg">
 </DIV>
-    <nav class="navegacion">
-        <ul>
-            <li class="listaitem"><a class="listaancla" href="../index.html">Inicio</a></li>
-            <li class="listaitem"><a class="listaancla" href="./Pages/Preguntas Frecuentes.html">Preguntas frecuentes</a></li>
-            <li class="listaitem"><a class="listaancla" href="#">Galeria</a></li>
-            <li class="listaitem"><a class="listaancla" href="./Pages/Nosotros.html">Nosotros</a></li>
-            <li class="listaitem"><a class="listaancla" href="./Pages/Contacto.html">Contacto</a></li>
-    </ul>
-    </nav>
+<!--aqui va la navegación de nuestro sitio-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand colorlink" href="../index.html">Inicio</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active colorlink" aria-current="page" href="#">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link colorlink" href="../Pages/Nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link colorlink" href="../Pages/Contacto.html">Contacto</a>
+          </li>
+       
+          <li class="nav-item">
+            <a class="nav-link colorlink" href="../Pages/Preguntas Frecuentes.html">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2s" type="search" placeholder="¿Qué buscas?" aria-label="Search">
+          <button class=" color btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
 <main>
-    <h1>NUESTROS SMARTWATCHES</h1>
-  <img src="../Assets/Img/galeria1.png" alt="">
-  <img src="../Assets/Img/galeria2.png" alt="">
-  <img src="../Assets/Img/galeria3.png" alt="">
-  <img src="../Assets/Img/galeria4.png" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
+  <h1 class="tituloprincipal">UNA FUNCIÓN PARA CADA ESTILO</h1>
+  <h2 class="titulosecundariotexto">Nuestra galeria de estilos</h2>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Assets/Img/banner pagina.jpg" class= "d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Te acompaña siempre </h5>
+          <p>En tu oficina, facilitá tu vida cotidiana.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Assets/Img/banner pagina (2).jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tus días más divertidos</h5>
+          <p>Controlá tu música favorita con tu smartwatch.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Assets/Img/banner pagina (3).jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="h5G">Vida activa</h5>
+          <p>Controlá tu salud desde tu muñeca.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="video-container">
+    <section>
+        <h2 class="Tituloparavideo">Tu estilo en nuestro canal</h2>
+        
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/kLKxwA8ZS6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </section>
+</div>  
+<div class="video-container">
+  <iframe width="450" height="315" src="https://www.youtube.com/embed/kLKxwA8ZS6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+</div> 
 </main>
+
 <footer>
     <div class="contenedorfooter">
-        Todos los derechos reservados WatchArg
-        
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-facebook"></i>
-    </div>
+    Todos los derechos reservados WatchArg
+    
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-facebook"></i>
+</div>
+
+
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>  
