@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/*aqui van las variables*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.header {
+  background-color: rgba(247, 203, 203, 0.425);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+.header .conteinerlogo {
+  display: flex;
+  justify-content: center;
+}
+.header .conteinerlogo .color {
+  color: rgb(255, 255, 255);
+  background-color: rgba(122, 115, 117, 0.897);
+}
+.header .conteinerlogo .color .colorlink {
+  color: rgba(122, 115, 117, 0.897);
+}
+.header .conteinerlogo .color .colorlink .navegacion {
+  color: aliceblue;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header .conteinerlogo .color .colorlink .navegacion .listaitem {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+.header .conteinerlogo .color .colorlink .navegacion .listaitem .listaancla {
+  text-decoration: none;
+}
+
+/*
+.header{
+    background-color: $color-primario;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+text-align: left;
+}
+*/
+/*
+.conteinerlogo{
+    display: flex;
+    justify-content: center;
+}
+*/
+/*
+    .color{
+        color: rgb(255, 255, 255);
+        background-color: rgba(122, 115, 117, 0.897);  
+    }
+    */
+/*
+.colorlink{
+    color: rgba(122, 115, 117, 0.897);
+}
+*/
+/*
+.navegacion{
+    color: aliceblue;    
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center
+
+
+}
+*/
+/*
+.listaitem{
+    color: black;
+    text-decoration: none;
+    display:inline-block
+}
+*/
+/*
+.listaancla{
+    text-decoration: none;
+}
+*/
+.contenedorfooter {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.ColorFooter {
+  background-color: rgba(247, 203, 203, 0.425);
+  margin-top: 10px;
+}
+
+.tituloprincipal {
+  text-align: center;
+  color: rgb(73, 63, 63);
+  font-size: 2.5rem;
+  padding: 5px;
+  margin-bottom: 5;
+}
+
+.titulosecundariotexto {
+  text-align: center;
+  color: rgb(73, 63, 63);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.portada {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenedorcards {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 30%;
+  height: 200px;
+  background-color: blanchedalmond;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tittlecard {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+  margin-top: 5px;
+  color: rgb(73, 63, 63);
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.Tituloparavideo {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: rgb(73, 63, 63);
+}
+
+.Parrafovideo {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/*acá termina el main*/
+/*Maquetado de la página Galeria*/
+.carousel-item {
+  height: 75vh;
+}
+
+/*Maquetado de la página nosotros*/
+.imgfondocol {
+  background-position: center;
+  background-size: cover;
+}
+
+.alto {
+  min-height: 71vh;
+}
+
+.textColorh1 {
+  color: rgb(73, 63, 63);
+}
+
+.colizquierda {
+  height: 100%;
+}
+
+.colderecha {
+  height: 100%;
+}
+
+/*Maquetado de la página contacto*/
+.imgcon {
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: rgb(255, 127, 238) !important;
+}
+
+/*maquetado pagina PF*/
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.alto {
+  overflow: hidden;
+}
+
+.card-text {
+  width: 100%;
+  height: 100%;
+}
+
+.Tituloparamapa {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.parrafomapa {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorcards {
+    height: 85%;
+    margin: 0 auto;
+  }
+  .card {
+    width: 100%;
+    height: 300px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    display: inline-block;
+  }
+  .tittlecard {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    color: rgb(69, 73, 73);
+  }
+  .card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .imagNos {
+    width: 100%;
+  }
+  .ImagCon {
+    width: 100%;
+    height: 80%;
+  }
+  .carousel-item {
+    height: 100%;
+  }
+  .Parrafovideo {
+    font-size: 1rem;
+  }
+  .parrafomapa {
+    font-size: 1rem;
+  }
+  .mapita {
+    width: 450px;
+    height: 350;
+  }
+}/*# sourceMappingURL=estilos.css.map */

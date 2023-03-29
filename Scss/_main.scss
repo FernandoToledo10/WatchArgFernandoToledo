@@ -1,0 +1,182 @@
+.tituloprincipal{
+    text-align: center;
+    color: $color-tittles;
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-bottom: 5;
+    
+}
+.titulosecundariotexto{
+    text-align: center;
+    color: $color-tittles;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.portada{
+    width: 100%;
+    margin: 0 auto;
+}
+.contenedorcards{
+    width: 85%;
+    margin: 0 auto;
+}
+.card{
+    width: 30%;
+    height: 200px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    display:inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.card img{
+    width: 100%;
+height: 80%;
+border-radius: 10px 10px 0 0;
+object-fit: cover;
+}
+.tittlecard{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    color: $color-tittles
+}
+.video-container{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+.Tituloparavideo{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: $color-tittles
+    
+}
+.Parrafovideo{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+/*acá termina el main*/
+
+
+
+/*Maquetado de la página Galeria*/
+.carousel-item{
+    height: 75vh;}
+    
+        
+    
+
+    /*Maquetado de la página nosotros*/
+
+.imgfondocol{
+    background-position: center;
+    background-size: cover;
+    
+}
+.alto{
+    min-height: 71vh;
+}
+.textColorh1{
+    color: $color-tittles;
+}
+
+.colizquierda{
+    height: 100%;
+}
+.colderecha{
+    height: 100%;
+}
+
+    /*Maquetado de la página contacto*/
+
+.imgcon{
+width: 50%;
+    
+}
+.btn:hover{
+    background-color: rgb(255, 127, 238) !important;
+}
+/*maquetado pagina PF*/
+.centrado{
+    display: flex;
+    justify-content: center;}
+    
+    .alto{
+
+        overflow: hidden;
+
+
+    }
+
+    .card-text{
+        width: 100%;
+        height: 100%;
+    }
+    .Tituloparamapa
+{
+    margin-top: 10px;
+    margin-bottom: 10px;}
+    .parrafomapa{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+ 
+
+    @media screen and (max-width: 768px){
+        .contenedorcards{
+            height: 85%;
+            margin: 0 auto;
+        }
+        
+        .card{
+            width: 100%;
+            height: 300px;
+            background-color: blanchedalmond;
+            margin: 10px;
+            display: inline-block;
+        }
+        .tittlecard{
+            text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 60px;
+        margin-top: 5px;
+        color: rgb(69, 73, 73)
+        }
+        
+        .card img{
+            width: 100%;
+        height: 80%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;}
+        
+        .imagNos{
+            width: 100%;
+           }
+        .ImagCon{
+            width: 100%;
+        height: 80%
+        }
+    
+    .carousel-item{
+        height: 100%}
+        
+       .Parrafovideo{
+        font-size: 1rem;
+       }
+       .parrafomapa{
+       font-size: 1rem;}
+       
+        .mapita{
+            width: 450px;
+            height: 350;
+        }
+    }
+    
