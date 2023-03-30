@@ -1,0 +1,7 @@
+@mixin textvideoestilo($t-a, $mb) {
+    text-align: $t-a;
+    margin-bottom: $mb;
+    margin-top: 20px;
+    color: $color-tittles;
+   
+    }

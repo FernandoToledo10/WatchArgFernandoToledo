@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*aqui van las variables*/
+/*aqui va un maps, que se encuentra en el main.css*/
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
 * {
   margin: 0;
@@ -112,7 +113,7 @@ text-align: left;
   text-align: center;
   color: rgb(73, 63, 63);
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .portada {
@@ -159,15 +160,9 @@ text-align: left;
 
 .Tituloparavideo {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 20px;
   color: rgb(73, 63, 63);
-}
-
-.Parrafovideo {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
 }
 
 /*acá termina el main*/
@@ -204,7 +199,7 @@ text-align: left;
 }
 
 .btn:hover {
-  background-color: rgb(255, 127, 238) !important;
+  background-color: rgb(54, 51, 54) !important;
 }
 
 /*maquetado pagina PF*/
@@ -222,14 +217,14 @@ text-align: left;
   height: 100%;
 }
 
-.Tituloparamapa {
+/*aqui va el extend*/
+.Tituloparamapa, .parrafomapa {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .parrafomapa {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {

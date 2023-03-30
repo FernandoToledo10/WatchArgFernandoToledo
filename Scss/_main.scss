@@ -7,10 +7,10 @@
     
 }
 .titulosecundariotexto{
-    text-align: center;
+    text-align: map-get($estilos-h2 , text-align );
     color: $color-tittles;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+    margin-bottom: map-get($estilos-h2 , margin-bottom);
+    font-size: map-get($estilos-h2, font-size );
 }
 .portada{
     width: 100%;
@@ -52,16 +52,15 @@ object-fit: cover;
 }
 .Tituloparavideo{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 20px;
     color: $color-tittles
     
 }
-.Parrafovideo{
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
+.Parrafovideo {
+@include textvideoestilo(center, 10px);  
+ }
+
 /*acá termina el main*/
 
 
@@ -101,7 +100,7 @@ width: 50%;
     
 }
 .btn:hover{
-    background-color: rgb(255, 127, 238) !important;
+    background-color: rgb(54, 51, 54) !important;
 }
 /*maquetado pagina PF*/
 .centrado{
@@ -119,13 +118,14 @@ width: 50%;
         width: 100%;
         height: 100%;
     }
+    /*aqui va el extend*/
     .Tituloparamapa
 {
     margin-top: 10px;
-    margin-bottom: 10px;}
+    margin-bottom: 8px;}
     .parrafomapa{
-        margin-top: 10px;
-        margin-bottom: 10px;
+        @extend .Tituloparamapa;
+        margin-bottom: 15px;
     }
 
  
