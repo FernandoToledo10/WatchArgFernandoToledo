@@ -10,7 +10,7 @@
 }
 
 .header {
-  background-color: rgba(247, 203, 203, 0.425);
+  background-color: blanchedalmond;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -20,29 +20,26 @@
   display: flex;
   justify-content: center;
 }
-.header .conteinerlogo .color {
-  color: rgb(255, 255, 255);
-  background-color: rgba(122, 115, 117, 0.897);
+.header .colorlink {
+  color: rgba(90, 84, 85, 0.897) !important;
 }
-.header .conteinerlogo .color .colorlink {
-  color: rgba(122, 115, 117, 0.897);
-}
-.header .conteinerlogo .color .colorlink .navegacion {
+.header .navegacion {
   color: aliceblue;
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-align: center;
 }
-.header .conteinerlogo .color .colorlink .navegacion .listaitem {
+.header .navegacion .listaitem {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-.header .conteinerlogo .color .colorlink .navegacion .listaitem .listaancla {
+.header .navegacion .listaancla {
   text-decoration: none;
 }
 
 /*
+
 .header{
     background-color: $color-primario;
     padding: 10px;
@@ -50,42 +47,33 @@
     margin-top: 10px;
 text-align: left;
 }
-*/
-/*
+
+
 .conteinerlogo{
     display: flex;
     justify-content: center;
 }
-*/
-/*
-    .color{
-        color: rgb(255, 255, 255);
-        background-color: rgba(122, 115, 117, 0.897);  
+
+
+
+    .colorlink{
+        color: rgba(90, 84, 85, 0.897) !important;
     }
-    */
-/*
-.colorlink{
-    color: rgba(122, 115, 117, 0.897);
-}
-*/
-/*
+
 .navegacion{
     color: aliceblue;    
     font-size: 1.3rem;
     margin-bottom: 20px;
-    text-align: center
-
+    text-align: center;  
 
 }
-*/
-/*
+
 .listaitem{
     color: black;
     text-decoration: none;
     display:inline-block
 }
-*/
-/*
+
 .listaancla{
     text-decoration: none;
 }
@@ -97,8 +85,73 @@ text-align: left;
 }
 
 .ColorFooter {
-  background-color: rgba(247, 203, 203, 0.425);
+  background-color: blanchedalmond;
   margin-top: 10px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 25px;
+  z-index: 1000;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-float {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.instagram-float-1 {
+  left: 20px;
+  background-color: #e1306c;
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer h4 {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #333;
+  text-decoration: none;
 }
 
 .tituloprincipal {
@@ -134,16 +187,22 @@ text-align: left;
 
 .portada {
   border-radius: 5%;
+  transition: transform 0.4s ease-in-out;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: 70%;
   padding: 20px;
   margin-top: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   background-color: blanchedalmond;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.portada:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .contenedorcards {
@@ -154,12 +213,18 @@ text-align: left;
 .card {
   width: 30%;
   height: 200px;
+  transition: transform 0.2s ease-out;
   background-color: blanchedalmond;
   margin: 10px;
   margin-top: 30px;
   display: inline-block;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -289,7 +354,7 @@ text-align: left;
     width: 100%;
     height: 250px;
     margin-top: 30px;
-    background-color: rgba(247, 203, 203, 0.425);
+    background-color: blanchedalmond;
     margin: 10px;
     flex-wrap: wrap;
   }
