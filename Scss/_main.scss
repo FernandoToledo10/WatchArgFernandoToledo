@@ -12,19 +12,45 @@
     margin-bottom: map-get($estilos-h2 , margin-bottom);
     font-size: map-get($estilos-h2, font-size );
 }
+.titulosecundariotextoindex{
+    text-align: map-get($estilos-h2 , text-align );
+    color: $color-tittles;
+    margin-top: 30px;
+    margin-bottom: map-get($estilos-h2 , margin-bottom);
+    font-size: map-get($estilos-h2, font-size ); 
+}
+.tituloprincipalgale{
+    text-align: center;
+    color: $color-tittles;
+    font-size: 2.5rem;
+    padding: 5px;
+    margin-top: 40px;
+}
 .portada{
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    
+    object-fit: cover;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    
 }
 .contenedorcards{
     width: 85%;
-    margin: 0 auto;
+    margin: auto;
 }
 .card{
     width: 30%;
     height: 200px;
     background-color: blanchedalmond;
     margin: 10px;
+    margin-top: 30px;
     display:inline-block;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -34,8 +60,9 @@
 .card img{
     width: 100%;
 height: 80%;
-border-radius: 10px 10px 0 0;
+border-radius: 10px 10px 0px 0px;
 object-fit: cover;
+
 }
 .tittlecard{
     text-align: center;
@@ -44,6 +71,9 @@ object-fit: cover;
     margin-top: 5px;
     color: $color-tittles
 }
+
+    
+
 .video-container{
     text-align: center;
     margin-bottom: 10px;
@@ -57,17 +87,36 @@ object-fit: cover;
     color: $color-tittles
     
 }
-.Parrafovideo {
-@include textvideoestilo(center, 10px);  
- }
 
+.imgfondocolindex{
+    background-position: center;
+    background-size: cover;
+    
+}
+.altoindex{
+    min-height: 71vh;
+}
+.colizquierdaindex{
+    height: 100%;
+}
+.colderechaindex{
+    height: 100%;
+}
+.Parrafovideo {
+@include textvideoestilo(center, 20px);  
+ }
+ 
 /*acá termina el main*/
 
 
 
 /*Maquetado de la página Galeria*/
 .carousel-item{
-    height: 75vh;}
+    height: 75vh;
+    object-fit: cover;
+}
+
+    
     
         
     
@@ -132,16 +181,18 @@ width: 50%;
 
     @media screen and (max-width: 768px){
         .contenedorcards{
-            height: 85%;
-            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
         }
         
         .card{
             width: 100%;
-            height: 300px;
-            background-color: blanchedalmond;
+            height: 250px;
+            margin-top: 30px;
+            background-color: $color-primario;
             margin: 10px;
-            display: inline-block;
+            flex-wrap: wrap;
         }
         .tittlecard{
             text-align: center;
@@ -150,6 +201,7 @@ width: 50%;
         margin-top: 5px;
         color: rgb(69, 73, 73)
         }
+       
         
         .card img{
             width: 100%;
@@ -167,16 +219,44 @@ width: 50%;
     
     .carousel-item{
         height: 100%}
-        
-       .Parrafovideo{
-        font-size: 1rem;
-       }
-       .parrafomapa{
-       font-size: 1rem;}
+
+        .Parrafovideo{
+            margin-bottom: 30px;
+            font-size: 1rem;
+           }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-top: 29px;
+            overflow: hidden;
+          }
+          
+          .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          
+
+          .imgfondocolindex .iframm {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 56.25%;
+            margin: 20px 0;
+          }
+          .imgfondocolindex .iframm{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+         
        
-        .mapita{
-            width: 450px;
-            height: 350;
-        }
+       
     }
     
