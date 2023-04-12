@@ -155,14 +155,20 @@ object-fit: cover;
     height: 100%;
 }
 
+  
+
     /*Maquetado de la página contacto*/
 
 .imgcon{
 width: 50%;
-    
+.btn{
+    color: grey !important; 
+   
+}    
 }
 .btn:hover{
     background-color: rgb(54, 51, 54) !important;
+    
 }
 /*maquetado pagina PF*/
 .centrado{
