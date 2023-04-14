@@ -357,6 +357,34 @@ footer a:hover {
   margin-bottom: 15px;
 }
 
+/*Maquetado de la página 404error*/
+.contenedor-flex {
+  display: flex;
+}
+
+.texto-gris {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: rgb(73, 63, 63);
+}
+
+.texto-gris h1 {
+  color: rgb(73, 63, 63);
+  text-align: center;
+  margin-top: 150px;
+}
+
+.imagen {
+  flex: 1;
+  padding: 20px;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .contenedorcards {
     flex-wrap: wrap;
@@ -425,5 +453,16 @@ footer a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .contenedor-flex {
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .texto-gris, .imagen {
+    flex: none;
+    width: 100%;
+  }
+  .texto-gris, .imagen img {
+    padding: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */
